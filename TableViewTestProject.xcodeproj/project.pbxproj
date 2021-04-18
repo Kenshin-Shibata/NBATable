@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				37B2BDBA262B108E00BA09F2 /* MainTableViewController.swift */,
+				37B2BDD6262BBCE300BA09F2 /* MainTableViewCell.swift */,
 				37B2BD87262B0FB900BA09F2 /* AppDelegate.swift */,
 				37B2BD89262B0FB900BA09F2 /* SceneDelegate.swift */,
 				37B2BD90262B0FBA00BA09F2 /* Assets.xcassets */,
 				37B2BD92262B0FBA00BA09F2 /* LaunchScreen.storyboard */,
 				37B2BD95262B0FBA00BA09F2 /* Info.plist */,
-				37B2BDD6262BBCE300BA09F2 /* MainTableViewCell.swift */,
 			);
 			path = TableViewTestProject;
 			sourceTree = "<group>";
