@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		37B2BD88262B0FB900BA09F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BD87262B0FB900BA09F2 /* AppDelegate.swift */; };
 		37B2BD8A262B0FB900BA09F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BD89262B0FB900BA09F2 /* SceneDelegate.swift */; };
-		37B2BD8C262B0FB900BA09F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BD8B262B0FB900BA09F2 /* ViewController.swift */; };
-		37B2BD8F262B0FB900BA09F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2BD8D262B0FB900BA09F2 /* Main.storyboard */; };
 		37B2BD91262B0FBA00BA09F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B2BD90262B0FBA00BA09F2 /* Assets.xcassets */; };
 		37B2BD94262B0FBA00BA09F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2BD92262B0FBA00BA09F2 /* LaunchScreen.storyboard */; };
 		37B2BD9F262B0FBA00BA09F2 /* TableViewTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BD9E262B0FBA00BA09F2 /* TableViewTestProjectTests.swift */; };
 		37B2BDAA262B0FBA00BA09F2 /* TableViewTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BDA9262B0FBA00BA09F2 /* TableViewTestProjectUITests.swift */; };
+		37B2BDBB262B108E00BA09F2 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BDBA262B108E00BA09F2 /* MainTableViewController.swift */; };
+		37B2BDD7262BBCE300BA09F2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BDD6262BBCE300BA09F2 /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		37B2BD84262B0FB900BA09F2 /* TableViewTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B2BD87262B0FB900BA09F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B2BD89262B0FB900BA09F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37B2BD8B262B0FB900BA09F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37B2BD8E262B0FB900BA09F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B2BD90262B0FBA00BA09F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B2BD93262B0FBA00BA09F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B2BD95262B0FBA00BA09F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		37B2BDA5262B0FBA00BA09F2 /* TableViewTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B2BDA9262B0FBA00BA09F2 /* TableViewTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTestProjectUITests.swift; sourceTree = "<group>"; };
 		37B2BDAB262B0FBA00BA09F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B2BDBA262B108E00BA09F2 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		37B2BDD6262BBCE300BA09F2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,13 @@
 		37B2BD86262B0FB900BA09F2 /* TableViewTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				37B2BDBA262B108E00BA09F2 /* MainTableViewController.swift */,
 				37B2BD87262B0FB900BA09F2 /* AppDelegate.swift */,
 				37B2BD89262B0FB900BA09F2 /* SceneDelegate.swift */,
-				37B2BD8B262B0FB900BA09F2 /* ViewController.swift */,
-				37B2BD8D262B0FB900BA09F2 /* Main.storyboard */,
 				37B2BD90262B0FBA00BA09F2 /* Assets.xcassets */,
 				37B2BD92262B0FBA00BA09F2 /* LaunchScreen.storyboard */,
 				37B2BD95262B0FBA00BA09F2 /* Info.plist */,
+				37B2BDD6262BBCE300BA09F2 /* MainTableViewCell.swift */,
 			);
 			path = TableViewTestProject;
 			sourceTree = "<group>";
@@ -233,7 +233,6 @@
 			files = (
 				37B2BD94262B0FBA00BA09F2 /* LaunchScreen.storyboard in Resources */,
 				37B2BD91262B0FBA00BA09F2 /* Assets.xcassets in Resources */,
-				37B2BD8F262B0FB900BA09F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B2BD8C262B0FB900BA09F2 /* ViewController.swift in Sources */,
+				37B2BDBB262B108E00BA09F2 /* MainTableViewController.swift in Sources */,
 				37B2BD88262B0FB900BA09F2 /* AppDelegate.swift in Sources */,
+				37B2BDD7262BBCE300BA09F2 /* MainTableViewCell.swift in Sources */,
 				37B2BD8A262B0FB900BA09F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		37B2BD8D262B0FB900BA09F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37B2BD8E262B0FB900BA09F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		37B2BD92262B0FBA00BA09F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
