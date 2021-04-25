@@ -1,0 +1,2 @@
+# NBATable
+swiftのtableを使用する練習のために作成したNBA選手名鑑的な何か
